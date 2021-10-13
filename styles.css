@@ -19,3 +19,9 @@ margin: 20px;
 
 
 nav a:hover {color: red;}
+
+header {
+padding: 20px;  
+text-align: center;  
+background-color: sandybrown;
+}
