@@ -1,0 +1,18 @@
+body {
+background-color: black;    
+}
+
+
+.container-fluid {
+color: white;  
+
+}
+
+.col {
+background-color:white;
+}
+
+.row1 {
+ padding-left: 30px;  
+ 
+}
