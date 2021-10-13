@@ -3,26 +3,17 @@ background-color:red;
 }
 
 
-.container-fluid {
+.container {
 color: white;  
 
 }
 
-.col {
-color: blanchedalmond;
-}
 
-.row1 {
- background-color: black;   
- padding-left: 30px;  
- 
-}
 
 .row {
  background-color: black;   
+ color: white;
 }
 
 
-.col-xs-7 {
-padding:left;
-}
+
