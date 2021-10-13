@@ -15,7 +15,10 @@ main {
  width: 70%;
     float: left;
 margin: 20px;
+background-color: sienna;
 }  
+
+
 
 
 nav a:hover {color: red;}
