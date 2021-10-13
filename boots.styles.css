@@ -1,5 +1,5 @@
-body {
-background-color: black;    
+body {  
+background-color:red;
 }
 
 
@@ -9,10 +9,20 @@ color: white;
 }
 
 .col {
-background-color:white;
+color: blanchedalmond;
 }
 
 .row1 {
+ background-color: black;   
  padding-left: 30px;  
  
+}
+
+.row {
+ background-color: black;   
+}
+
+
+.col-xs-7 {
+padding:left;
 }
