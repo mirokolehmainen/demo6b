@@ -121,3 +121,14 @@ color: black;
  padding-left: 100px; 
  padding-top: 0%;
 }
+
+.navbar {
+float: left;
+width: auto;
+height: auto;
+}
+
+h5 {
+  text-align: center; 
+  padding: 30px;  
+}
