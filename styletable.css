@@ -6,7 +6,7 @@ table, th, td {
 }
 
 legend {
-    background-color: gray;
+    background-color: rgb(1, 17, 153);
     color: white;
     padding: 5px 10px;
 }
@@ -46,4 +46,8 @@ input[type=text], select {
       p {
        background-color: rgb(82, 129, 6);   
        size: 10px;
+      }
+
+      th {
+      font-style: italic;
       }
