@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styletable.css">    
+<body>
+
+<h2>Tieteellinen sivusto</h2>
+<table>
+    <caption>Taulukko asioista</caption>  
+  <tr>
+    <th rowspan="2">Harrastuksia</th>
+    <th>Aikoja</th>
+    <th>Paikkoja</th>
+  </tr>
+  <tr>
+    <td>12:00</td>
+    <td>Helsinki</td>
+  </tr>
+  <tr>
+    <td>Tennis</td>
+    <td>13:00</td>
+    <td>Taipalsaari</td>
+  </tr>
+  <tr>
+    <td>Jääkiekko</td>
+    <td>14:30</td>
+    <td>Tikkurila</td>
+  </tr>
+  <tr>
+    <td>Uinti</td>
+    <td>15:10</td>
+    <td>Järvenpää</td>
+  </tr>
+  <tr>
+    <td>Sulkapallo</td>
+    <td>15:35</td>
+    <td>Kerava</td>
+  </tr>
+</table>
+
+<p>Täyttäkää lomake</p>
+
+<form action="https://www.w3schools.com/action_page.php" method="post">
+    <fieldset>
+        <legend>Tiedot:</legend>
+    <label for="fname">Etunimi:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Sukunimi:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Sähköpösti:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <p>Lisätietoja:</p>
+    <textarea rows="4" cols="80"></textarea>
+    <input type="checkbox" id="Uutiskirje" name="Uutiskirje" value="Uutiskirje">
+    <label for="Uutiskirje"> Haluan uutiskirjeen</label><br>
+    <label for="cars">Valitse aikaväli:</label>
+    <select name="aikaväli" id="aikaväli">
+      <option value="1">Kerran viikossa</option>
+      <option value="2">Kaksi kertaa viikossa</option>
+      <option value="3">Kolme kertaa viikossa</option>
+      <option value="4">Neljä kertaa viikossa</option>
+    </select> 
+    <input type="submit" value="Lisää uusi käyttäjä">
+</fieldset>
+  </form> 
+
+</body>
+</html>
