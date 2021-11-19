@@ -1,48 +1,35 @@
 body {
  
-    background-image: url("hiekka2.jpg");  
+    background-image: url("hiekkaranta2.JPG");  
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    
 }
 
  *{box-sizing: border-box;}
 
 
-nav {
-    float: right;
- width: 30%;
-}
-
-
-*main {
- width: 70%;
-    float: left;
-margin: 20px;
-background-color: sienna;
-}  
 
 
 
 
-nav a:hover {color: rgb(0, 255, 21);}
 
-*header {
-padding: 20px;  
-text-align: center;  
-background-color: sandybrown;
-}
-
-figcaption {
-background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);
-font-style: italic;
-text-align: center;
-padding: 4px;
-margin: auto;
-width: 400px;
+ 
+ figcaption {
+ background-color: rgb(0, 0, 0);
+ color: rgb(255, 255, 255);
+ font-style: italic;
+ text-align: center;
+ padding: 4px;
+ margin: auto;
+ width: 400px;
 }
 
 h1 {
  text-align: center; 
  padding: 30px;  
+ color: white;
 }
 
 img {
@@ -54,14 +41,17 @@ img {
 
   p {
    color: rgb(255, 255, 255);   
-  text-align: center;
-  font-size:xx-large;
-padding-top: 100px;
+   text-align: center;
+   font-size:xx-large;
+   padding: 12px;
+   padding-bottom: 60px;
   }
 
   .p2 {
-     color: rgb(0, 0, 0); 
-font-size: large;
+     color: rgb(255, 255, 255); 
+     font-size: large;
+    padding: 12px;
+    padding-bottom: 60px;
   }
 
 
@@ -74,13 +64,16 @@ font-size: large;
   h2 {
   font-size: x-large;
   text-align: center;
+  color: aliceblue;
+  padding-top: 40px;
   
   }
 
   h3 {
     font-size: x-large;
     text-align: center;
-    color: aliceblue;    
+    color: aliceblue;   
+      padding-top: 40px;
   }
 
   .p3 {
@@ -91,7 +84,7 @@ font-size: large;
   h4 {
     font-size:xx-large;
     text-align: left;
-    color: black;    
+    color: rgb(255, 255, 255);    
     padding-left: 100px;
     padding-top: 30px;
     padding-bottom:30px;
@@ -102,7 +95,7 @@ font-size: large;
     float: right;
     padding-left: 30px;
     padding-bottom: 100px;
-padding-top: 50px;
+    padding-top: 50px;
 }
 
 
@@ -116,19 +109,62 @@ padding-top: 50px;
 
   .p4 {
   font-size: x-large;    
-text-align: left;
-color: black;
+ text-align: left;
+ color: rgb(255, 255, 255);
  padding-left: 100px; 
  padding-top: 0%;
 }
 
-.navbar {
-float: left;
-width: auto;
-height: auto;
-}
 
 h5 {
   text-align: center; 
   padding: 30px;  
 }
+
+ul {
+  list-style-type: none;
+  margin: 7px;
+  padding: 0;
+  overflow: hidden;
+  background-color:transparent;
+  font-family: fantasy;
+  font-size: medium;
+}
+
+li {
+  float: left;
+  border-right: 1px solid  rgba(14, 0, 0, 0.548);
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: transparent;
+}
+
+li a:link {
+  color: black;
+  text-decoration: none;
+}
+
+
+ li a:visited {
+  color: #000000;
+}
+ 
+
+li a:hover {color: rgb(0, 255, 21);
+text-decoration: none;
+}
+
+
+  @media only screen and (max-width: 600px) {
+    ul.li {float: none;}
+    .kuva2 {  max-width: 100%;
+      height: auto;}
+    }

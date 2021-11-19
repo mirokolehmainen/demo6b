@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilmoittautuminen retkille</title>
+<ul>
+  <li><a href="wframe.html">Etusivu</a></li>
+  <li><a href="wframe2.html">Nähtävyydet</a></li>
+  <li><a href="lomake.html" target="_blank">Retket</a></li>
+  <li><a href="wrframe3.html">Yhteystiedot</a></li>
+</ul>
+</head>
+<body>
+    <link rel="stylesheet" href="lomaketyylit.css"> 
+<h2>Tietoja retkistä</h2>
+<table>
+    <caption>Thaimaan matkailua</caption>  
+  <tr>
+    <th colspan="1">Retket</th>
+    <th colspan="1">Lähtö aikoja</th>
+    <th colspan="1">Lähtö paikkoja</th>
+  </tr>
+  <tr>
+    <td>Kalastusretki</td>
+    <td>12:00</td>
+    <td>Chalong</td>
+  </tr>
+  <tr>
+    <td>Saari retki</td>
+    <td>13:00</td>
+    <td>Pattaya</td>
+  </tr>
+  <tr>
+    <td>Retki Big Buddha patsaalle</td>
+    <td>14:30</td>
+    <td>Phuket</td>
+  </tr>
+  <tr>
+    <td>Sukellusretki</td>
+    <td>15:10</td>
+    <td>Koh Tao</td>
+  </tr>
+</table>
+<div class="lomake">
+<p>Täyttäkää lomake, jos haluatte ilmoittautua retkelle</p>
+
+<form action="https://www.w3schools.com/action_page.php" method="post">
+    <fieldset>
+        <legend>Tiedot:</legend>
+    <label for="fname">Etunimi:</label>
+    <input type="text" id="fname" name="fname"maxlength="30"><br><br>
+    <label for="lname">Sukunimi:</label>
+    <input type="text" id="lname" name="lname"maxlength="50"><br><br>
+    <div class="sähköposti"><label for="email">Sähköpösti:</label>
+    <input type="email" id="email" name="email"maxlength="50" size="30"><br><br></div>
+    <p>Lisätietoja esimerkiksi allergiat:</p>
+    <textarea rows="4" cols="80"></textarea>
+    <div class="check"><input type="checkbox" id="Info" name="info" value="Info">
+    <label for="Info"> Haluan infoa matkoista</label><br></div>
+    <label for="Matkat">Valitse haluamasi matka:</label>
+    <select name="matkat" id="matkat">
+      <option value="1">Kalastusretki</option>
+      <option value="2">Saari retki</option>
+      <option value="3">Retki Big Buddha patsaalle</option>
+      <option value="4">Sukellusretki</option>
+    </select>
+    <input type="submit"value="Lisää uusi matkailija">
+</fieldset>
+  </form> 
+</div>
+
+
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="sukellus.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="sukelluskaloja.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="saarimaisema.JPG" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="luola.JPG" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="Buddha2.JPG" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="kalaboxi.jpg" style="width:50%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="sukellus.jpg" style="width:100%" onclick="currentSlide(1)" alt="Kuva sukellukselta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sukelluskaloja.jpg" style="width:100%" onclick="currentSlide(2)" alt="Lisää sukellusta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="saarimaisema.JPG" style="width:100%" onclick="currentSlide(3)" alt="Kuva saari retkeltä">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="luola.JPG" style="width:100%" onclick="currentSlide(4)" alt="Kuva saari retken luolasta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Buddha2.JPG" style="width:100%" onclick="currentSlide(5)" alt="Big Buddha patsas">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="kalaboxi.jpg" style="width:100%" onclick="currentSlide(6)" alt="Kuva kalaretkeltä">
+    </div>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+} 
+</script>
+</body>
+</html>
+
+
+
