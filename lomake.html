@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="fi">
-<head>
+ <!DOCTYPE html>
+ <html lang="fi">
+ <head>
   <meta charset="UTF-8" />  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ilmoittautuminen retkille</title>
-<ul>
+ <title>Ilmoittautuminen retkille</title>
+ <ul>
   <li><a href="wframe.html">Etusivu</a></li>
   <li><a href="wframe2.html">Nähtävyydet</a></li>
   <li><a href="lomake.html" target="_blank">Retket</a></li>
   <li><a href="wrframe3.html">Yhteystiedot</a></li>
-</ul>
-</head>
-<body>
+ </ul>
+ </head>
+ <body>
     <link rel="stylesheet" href="lomaketyylit.css"> 
-<h2>Tietoja retkistä</h2>
-<table>
+ <h2>Tietoja retkistä</h2>
+ <table>
     <caption>Thaimaan matkailua</caption>  
   <tr>
     <th colspan="1">Retket</th>
@@ -41,67 +41,67 @@
     <td>15:10</td>
     <td>Koh Tao</td>
   </tr>
-</table>
-<div class="lomake">
-<p>Täyttäkää lomake, jos haluatte ilmoittautua retkelle</p>
+ </table>
+ <div class="lomake">
+ <p>Täyttäkää lomake, jos haluatte ilmoittautua retkelle</p>
 
-<form action="https://www.w3schools.com/action_page.php" method="post">
+ <form action="https://www.w3schools.com/action_page.php" method="post">
     <fieldset>
         <legend>Tiedot:</legend>
     <label for="fname">Etunimi:</label>
-    <input type="text" id="fname" name="fname"maxlength="30"><br><br>
+    <input type="text" id="fname" name="fname" maxlength="30"><br><br>
     <label for="lname">Sukunimi:</label>
-    <input type="text" id="lname" name="lname"maxlength="50"><br><br>
+    <input type="text" id="lname" name="lname" maxlength="50"><br><br>
     <div class="sähköposti"><label for="email">Sähköpösti:</label>
-    <input type="email" id="email" name="email"maxlength="50" size="30"><br><br></div>
+    <input type="email" id="email" name="email" maxlength="50" size="30"><br><br></div>
     <p>Lisätietoja esimerkiksi allergiat:</p>
     <textarea rows="4" cols="80"></textarea>
     <div class="check"><input type="checkbox" id="Info" name="info" value="Info">
     <label for="Info"> Haluan infoa matkoista</label><br></div>
-    <label for="Matkat">Valitse haluamasi matka:</label>
-    <select name="matkat" id="matkat">
+    <label for="Matkat"> Valitse haluamasi matka:</label>
+    <select name="Matkat" id="Matkat">
       <option value="1">Kalastusretki</option>
       <option value="2">Saari retki</option>
       <option value="3">Retki Big Buddha patsaalle</option>
       <option value="4">Sukellusretki</option>
     </select>
-    <input type="submit"value="Lisää uusi matkailija">
-</fieldset>
+    <input type="submit" value="Lisää uusi matkailija">
+ </fieldset>
   </form> 
-</div>
+ </div>
 
 
-<div class="container">
+ <div class="container">
 
   <!-- Full-width images with number text -->
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
-      <img src="sukellus.jpg" style="width:50%">
+      <img src="sukellus.jpg" style="width:50%" alt="Kuva sukellukselta" >
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 6</div>
-      <img src="sukelluskaloja.jpg" style="width:50%">
+      <img src="sukelluskaloja.jpg" style="width:50%" alt="Lisää sukellusta">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 6</div>
-      <img src="saarimaisema.JPG" style="width:50%">
+      <img src="saarimaisema.JPG" style="width:50%" alt="Kuva saari retkeltä">>
   </div>
 
   <div class="mySlides">
     <div class="numbertext">4 / 6</div>
-      <img src="luola.JPG" style="width:50%">
+      <img src="luola.JPG" style="width:50%" alt="Kuva saari retken luolasta">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">5 / 6</div>
-      <img src="Buddha2.JPG" style="width:50%">
+      <img src="Buddha2.JPG" style="width:50%" alt="Big Buddha patsas">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">6 / 6</div>
-      <img src="kalaboxi.jpg" style="width:50%">
+      <img src="kalaboxi.jpg" style="width:50%" alt="Kuva kalaretkeltä">
   </div>
 
   <!-- Next and previous buttons -->
@@ -134,22 +134,22 @@
       <img class="demo cursor" src="kalaboxi.jpg" style="width:100%" onclick="currentSlide(6)" alt="Kuva kalaretkeltä">
     </div>
   </div>
-</div>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
+ </div>
+ <script>
+ var slideIndex = 1;
+ showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+ // Next/previous controls
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
 
-// Thumbnail image controls
-function currentSlide(n) {
+ // Thumbnail image controls
+ function currentSlide(n) {
   showSlides(slideIndex = n);
-}
+ }
 
-function showSlides(n) {
+ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
@@ -165,10 +165,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-} 
-</script>
-</body>
-</html>
+ } 
+ </script>
+ </body>
+ </html>
 
 
 
