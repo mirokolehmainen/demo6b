@@ -164,7 +164,7 @@ text-decoration: none;
 
 
   @media only screen and (max-width: 600px) {
-    ul.li {float: none;}
+    ul.li {float: auto;}
     .kuva2 {  max-width: 100%;
       height: auto;}
     }
